@@ -396,6 +396,24 @@ p:last-child { margin-bottom: 0; }
 .tag--soon { background: rgba(245,179,1,.25); border-color: rgba(245,179,1,.5); }
 
 /* =====================================================================
+   Specialist pills
+   ===================================================================== */
+.pill-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 34px; }
+.pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #fff; border: 1px solid var(--line); border-radius: 999px;
+  padding: 10px 20px; font-family: var(--font-head); font-weight: 600;
+  font-size: .9rem; color: var(--brand);
+  transition: border-color .25s, transform .25s var(--ease), box-shadow .25s var(--ease);
+}
+.pill svg { width: 16px; height: 16px; color: var(--accent); }
+a.pill:hover { border-color: var(--brand); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+
+/* Sector teaser chips (text-only partner chips) */
+.partner-chip small { color: var(--muted); font-weight: 500; font-family: var(--font-body); }
+.partner-chip--plain { padding: 11px 22px; }
+
+/* =====================================================================
    Partners
    ===================================================================== */
 .partners__group + .partners__group { margin-top: 46px; }
